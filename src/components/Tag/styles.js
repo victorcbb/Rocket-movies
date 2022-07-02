@@ -8,6 +8,6 @@ export const Container = styled.div`
   
   padding: 0.5em 1.6rem;
   margin-right: .8rem;
-  background: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+  background: ${({ theme, isPreview }) => isPreview ? theme.COLORS.BACKGROUND_SALMON : theme.COLORS.BACKGROUND_700};
   border-radius: .8rem;
 `

@@ -13,4 +13,13 @@ export const Container = styled.button`
 
   font-weight: 500;
   color: ${({ theme, isBlack }) => isBlack ? theme.COLORS.SALMON : theme.COLORS.BACKGROUND_800};
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:disabled:hover {
+    filter: none;
+  }
 `
