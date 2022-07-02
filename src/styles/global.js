@@ -19,6 +19,20 @@ export default createGlobalStyle`
 
   body, input, button, textarea {
     font-family: 'Roboto Slab', serif;
-    font-size: 1.6rem;
+    font-size: 1.6rem;  
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button, a {
+    cursor: pointer;
+    transition: filter 0.2s;
+  }
+
+  button:hover, a:hover {
+    filter: brightness(0.9);
   }
 `
