@@ -7,14 +7,27 @@ height: 100vh;
 grid-template-rows: 11.6rem auto;
 grid-template-areas:
 "header"
-"content"
+"content";
+
+> div::-webkit-scrollbar {
+      width: 1.6rem;
+    }
+
+> div::-webkit-scrollbar-thumb {
+    border: .4rem solid transparent;
+    background-clip: padding-box;
+    background-color: ${({ theme }) => theme.COLORS.SALMON};
+    border-radius: 1.2rem;
+}
 `
 
 export const Content = styled.div`
   width: 113.7rem;
-  height: calc(100vh - 16rem);
+  height: calc(100vh - 23rem);
 
   grid-area: content;
+
+  overflow-y: auto;
 
   margin: 4rem auto 0;
 

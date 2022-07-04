@@ -8,7 +8,7 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <BackButton />
+        <BackButton to="/" />
       </header>
 
       <Form>

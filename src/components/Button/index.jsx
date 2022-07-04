@@ -6,7 +6,7 @@ export function Button({title, loading = false, isBlack, ...rest }) {
     <Container 
       {...rest}
       type="button"
-      disabled={loading || true }
+      disabled={loading}
       isBlack={isBlack}
     >
       {loading ? "Carregando" : title}

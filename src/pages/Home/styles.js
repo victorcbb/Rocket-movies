@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export const Container = styled.div`
@@ -40,9 +41,24 @@ export const Content = styled.div`
       }
     }
 
-  > .notes {
-    overflow-y: auto;
+    > section {
+      height: 65vh;
 
-    height: 68vh;
-  }
+      overflow-y: auto;
+    }
+
+    > section::-webkit-scrollbar {
+      width: 1.6rem;
+    }
+
+    > section::-webkit-scrollbar-thumb {
+        border: .4rem solid transparent;
+        background-clip: padding-box;
+        background-color: ${({ theme }) => theme.COLORS.SALMON};
+        border-radius: 1.2rem;
+    }
+  `
+
+export const Section = styled(Link)`
+  width: 100%;
 `

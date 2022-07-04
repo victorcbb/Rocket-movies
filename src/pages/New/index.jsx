@@ -10,7 +10,7 @@ export function New() {
     <Container>
       <Header />
       <Content>
-        <BackButton />
+        <BackButton to="/" />
 
         <h1>Novo Filme</h1>
 

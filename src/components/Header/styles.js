@@ -7,15 +7,23 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6.4rem;
 
-  padding: 0 35rem;
+  > .content {
+    width: 113.7rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+  }
+
+  /* padding: 0 35rem; */
 
   border-bottom: .1rem solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   grid-area: header;
 
-  > span {
+  span {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 3.2rem;

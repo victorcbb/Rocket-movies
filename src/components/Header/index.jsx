@@ -5,21 +5,25 @@ import { Input } from "../Input"
 export function Header() {
   return (
     <Container>
-      <span>RocketMovies</span>
-      <Input placeholder="Pesquisar pelo título" />
-      <Profile>
-        <div>
-          <a href="/profile">
-            <strong>
-              Victor Barros
-            </strong>
-          </a>
-          <a href="/">sair</a>
-        </div>
-        <a href="/profile">
-          <img src="https://github.com/victorcbb.png" alt="Imagem do perfil do usuário" />
-        </a>
-      </Profile>
+
+      <div className="content">
+        <span>RocketMovies</span>
+        <Input placeholder="Pesquisar pelo título" />
+        <Profile>
+          <div>
+            <Link to="/profile">
+              <strong>
+                Victor Barros
+              </strong>
+            </Link>
+            <Link to="/">sair</Link>
+          </div>
+          <Link to="/profile">
+            <img src="https://github.com/victorcbb.png" alt="Imagem do perfil do usuário" />
+          </Link>
+        </Profile>
+      </div>
+
     </Container>
   )
 }

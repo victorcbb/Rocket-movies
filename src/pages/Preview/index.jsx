@@ -9,7 +9,7 @@ export function Preview() {
     <Container>
       <Header />
       <Content>
-        <BackButton />
+        <BackButton to="/" />
 
         <div className="title">
           <h1>Interstellar</h1>
