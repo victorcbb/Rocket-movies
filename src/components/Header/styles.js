@@ -44,7 +44,10 @@ export const Profile = styled.div`
     align-items: flex-end;
     justify-content: center;
 
-    a{
+    button {
+      background: transparent;
+      border: none;
+
       color: ${({ theme }) => theme.COLORS.GRAY_200};
       font-size: 1.4rem;
       line-height: 1.8rem;
@@ -58,9 +61,27 @@ export const Profile = styled.div`
   img {
     width: 6.4rem;
     height: 6.4rem;
+    object-fit: cover;
 
     border-radius: 50%;
     border: .1rem solid ${({ theme }) => theme.COLORS.GRAY_200};
   }
+
+  a{
+    div:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 6.4rem;
+      height: 6.4rem;
+      
+      border-radius: 9999px;
+      background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+      color: ${({ theme }) => theme.COLORS.SALMON};
+    }
+  }
+
 
 `

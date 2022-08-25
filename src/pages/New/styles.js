@@ -76,7 +76,7 @@ export const Form = styled.form`
 
   > .tags {
     width: 100%;
-    height: 8.8rem;
+    min-height: 8.8rem;
 
     display: flex; 
     align-items: center;

@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export const Container = styled.div`
   width: 100%;
+
   height: 100vh;
 
   overflow-y: hidden;
@@ -15,7 +15,7 @@ export const Container = styled.div`
   `
 export const Content = styled.div`
   grid-area: content;
-  
+  width: 100%;
   max-width: 113.7rem;
   
   margin-inline: auto;
@@ -59,6 +59,6 @@ export const Content = styled.div`
     }
   `
 
-export const Section = styled(Link)`
+export const Section = styled.a`
   width: 100%;
 `

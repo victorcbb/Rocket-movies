@@ -30,11 +30,14 @@ export const Container = styled.button`
 
   > p {
     margin-block: 1.5rem;
+    height: 3.5rem;
 
     color: ${({ theme }) => theme.COLORS.GRAY_200};
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     line-height: 1.9rem;
+
+    overflow: hidden;
   }
 
   > footer {

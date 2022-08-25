@@ -35,8 +35,23 @@ export const Avatar = styled.div`
   > img {
     width: 18.6rem;
     height: 18.6rem;
+    object-fit: cover;
 
     border-radius: 50%;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18.6rem;
+    height: 18.6rem;
+    
+    border-radius: 9999px;
+    background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+    color: ${({ theme }) => theme.COLORS.SALMON};
   }
 
   > label {

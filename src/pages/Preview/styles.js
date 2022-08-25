@@ -55,6 +55,7 @@ export const Content = styled.div`
 
       border: .1rem solid ${({ theme }) => theme.COLORS.GRAY_200};
       border-radius: 50%;
+      object-fit: cover;
     }
 
     span {
