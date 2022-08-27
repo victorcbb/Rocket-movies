@@ -76,4 +76,8 @@ export const Content = styled.div`
   > p {
     text-align: justify;
   }
+
+  .DeleteNote {
+    margin-top: 3rem;
+  }
 `
