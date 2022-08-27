@@ -7,3 +7,6 @@ API-restful in front-end developed in react + vite and the back-end consuming it
 - `JavaScript`
 - `React`
 - `Nodejs`
+- `Styled-components`
+- `Date-fns`
+- `Axios`
